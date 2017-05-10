@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3a255b03-aec8-4108-a920-585676438ccf" activeEnvironment="Default" name="uklocation" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="105cca5b-61cd-41f7-8446-865d793fb710" wsaVersion="NONE" name="UKLocationSoap" type="wsdl" bindingName="{http://www.webserviceX.NET}UKLocationSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/uklocation.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint></con:endpoints><con:operation id="a0dd8c94-46a2-42f6-8388-d8ab9e0ab86d" isOneWay="false" action="http://www.webserviceX.NET/GetUKLocationByCounty" name="GetUKLocationByCounty" bindingOperationName="GetUKLocationByCounty" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fbf84e95-b46a-400c-a25f-d14561755d9e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUKLocationByCounty>
+         <!--Optional:-->
+         <web:County>?</web:County>
+      </web:GetUKLocationByCounty>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetUKLocationByCounty"/></con:call></con:operation><con:operation id="f588b090-e309-4628-a530-87373702139c" isOneWay="false" action="http://www.webserviceX.NET/GetUKLocationByPostCode" name="GetUKLocationByPostCode" bindingOperationName="GetUKLocationByPostCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3b0cd1d5-ef8c-4d52-b444-8e054478df85" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUKLocationByPostCode>
+         <!--Optional:-->
+         <web:PostCode>?</web:PostCode>
+      </web:GetUKLocationByPostCode>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetUKLocationByPostCode"/></con:call></con:operation><con:operation id="86fe0767-74a4-4ff9-aa2b-b4eb1fe1714a" isOneWay="false" action="http://www.webserviceX.NET/GetUKLocationByTown" name="GetUKLocationByTown" bindingOperationName="GetUKLocationByTown" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="26f8f6fe-997b-44c8-8dd6-2ddbf6d2ced7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUKLocationByTown>
+         <!--Optional:-->
+         <web:Town>?</web:Town>
+      </web:GetUKLocationByTown>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetUKLocationByTown"/></con:call></con:operation><con:operation id="5dc161b0-82a2-49c9-9ea9-8fc54830150f" isOneWay="false" action="http://www.webserviceX.NET/ValidateUKAddress" name="ValidateUKAddress" bindingOperationName="ValidateUKAddress" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8a966ac4-f850-4c74-b86e-fe860dccbbff" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:ValidateUKAddress>
+         <!--Optional:-->
+         <web:Town>?</web:Town>
+         <!--Optional:-->
+         <web:County>?</web:County>
+         <!--Optional:-->
+         <web:PostCode>?</web:PostCode>
+      </web:ValidateUKAddress>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/ValidateUKAddress"/></con:call></con:operation></con:interface><con:testSuite id="f30c6c4f-7b1b-4097-95df-5ad22323361c" name="UKLocation-TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f0d85590-7aaa-4e14-a616-4ec87308f65f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UKLocation-TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="04b26c65-8362-4a3e-9b83-e1c71d538b41" name="GetUKLocationByCounty"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UKLocationSoap</con:interface><con:operation>GetUKLocationByCounty</con:operation><con:request name="GetUKLocationByCounty" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="f8159275-e6d2-477f-9dbd-edd0626a71c1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUKLocationByCounty>
+         <!--Optional:-->
+         <web:County>oxford</web:County>
+      </web:GetUKLocationByCounty>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="b386d6aa-038f-4e5c-9343-d4591ef703a1" name="Contains"><con:configuration><token>Oxfordshire</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="5aa6bcb1-ead7-41ff-8a5f-7d8fcc09b02b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetUKLocationByCounty"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="PostCode" id="a6be9278-74e9-4a35-a21a-80ac35057b59"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>postCode</con:name><con:value>OX15</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="d584607f-78b0-4bdc-84cf-0edf031a7f43" name="GetUKLocationByPostCode"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UKLocationSoap</con:interface><con:operation>GetUKLocationByPostCode</con:operation><con:request name="GetUKLocationByPostCode" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="9acc684e-e78c-40c8-ba6f-e6a8ca3fad85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUKLocationByPostCode>
+         <!--Optional:-->
+         <web:PostCode>${Expresion}</web:PostCode>
+      </web:GetUKLocationByPostCode>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="7ca9ccbd-3749-43b7-9dd5-5c23bc5a2fb4" name="Contains"><con:configuration><token>OX15</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="2f08655e-556c-4e72-a9a4-4fcba220f974" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetUKLocationByPostCode"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="GetUKLocationByTown_ProjectLevel" id="74bcc816-6aa5-4090-ac69-ddf48823f721"><con:settings/><con:config><script>def UkTown= "clifton"
+log.info("UkTown : " + " " +UkTown)
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("UkTown", UkTown.toString())
+
+</script></con:config></con:testStep><con:testStep type="request" id="d2bf57e7-e0d9-456f-acb0-7ebf5bef0658" name="GetUKLocationByTown"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UKLocationSoap</con:interface><con:operation>GetUKLocationByTown</con:operation><con:request name="GetUKLocationByTown" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ad0b9102-fda0-419e-8b71-e1cedb5403fe"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUKLocationByTown>
+         <!--Optional:-->
+         <web:Town>${#Project#UkTown}</web:Town>
+      </web:GetUKLocationByTown>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="8dccefde-fd58-41e2-8921-b9683b4c50b1" name="Contains"><con:configuration><token>clifton</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="af7832f2-277b-4266-ba88-4aeea6b34a75" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetUKLocationByTown"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="171c6c27-da69-4186-8d08-2e6483a7d33c" name="ValidateUKAddress"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UKLocationSoap</con:interface><con:operation>ValidateUKAddress</con:operation><con:request name="ValidateUKAddress" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="0dea94ae-3f69-434d-bb9b-019c5f842907"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/uklocation.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:ValidateUKAddress>
+         <!--Optional:-->
+         <web:Town>${UKTown}</web:Town>
+         <!--Optional:-->
+         <web:County>${UKCounty}</web:County>
+         <!--Optional:-->
+         <web:PostCode>${UKPostCode}</web:PostCode>
+      </web:ValidateUKAddress>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="ca3060d4-2207-4a4a-aa75-07f4d6b597fb" name="Contains" disabled="true"><con:configuration><token>clifton, Bedfordshire, SG17</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="6fc5f421-f004-49b9-9d47-e3efc5c18bc1"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="9f74b47b-7516-4716-bf4d-203f95ad23e1" name="SG17"><con:configuration><token>SG17</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="74995daa-e839-41a7-8744-f5a3861ded0a" name="Clifton"><con:configuration><token>Bedfordshire</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="0f236930-6695-48fc-aa11-926717625dbd" name="Bedfordshire"><con:configuration><token>Bedfordshire</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="c8b39245-7782-4a29-9266-69acbdee011c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/ValidateUKAddress"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="ValidateUkAdress_GlobalLevel" id="4c2a2882-1726-4b8a-8086-448138b90454"><con:settings/><con:config><script>
+import groovy.util.XmlSlurper
+
+def responseContent = testRunner.testCase.getTestStepByName("GetUKLocationByTown").getPropertyValue("response")
+def xmlResponse = new XmlSlurper().parseText(responseContent)
+def slurperResponse = new XmlSlurper().parseText(xmlResponse.Body.GetUKLocationByTownResponse.GetUKLocationByTownResult.toString())
+
+int count = 0;
+		 while((slurperResponse.Table.Town[count]!= "Clifton") &amp;&amp; ((slurperResponse.Table.County[count]!= "Bedforshire") &amp;&amp; ((slurperResponse.Table.PostCode[count]!= "SG17")))) {
+       count++;
+    }
+  
+
+def UKTown = slurperResponse.Table.Town[count]
+def UKCounty = slurperResponse.Table.County[count]
+def UKPostCode = slurperResponse.Table.PostCode[count]
+
+log.info("UK :" +" " +UKPostCode)
+testRunner.testCase.testSuite.project.setPropertyValue("UKTown", UKTown.toString())
+testRunner.testCase.testSuite.project.setPropertyValue("UKCounty", UKCounty.toString())
+testRunner.testCase.testSuite.project.setPropertyValue("UKPostCode", UKPostCode.toString())
+
+
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("UKTown", UKTown.toString())
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("UKCounty", UKCounty.toString())
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("UKPostCode", UKPostCode.toString())
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4c13ff7c-8711-4bb3-b662-56bbc5155e9a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetUKLocationByCounty TestCase" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="a277e3a9-d931-4b2b-a923-a3e4cbee0dc5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetUKLocationByPostCode TestCase" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="8132abd3-998d-4494-a372-b852546dda13" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetUKLocationByTown TestCase" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="6a282a8f-8af6-4d38-8a21-4f634869f4ca" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ValidateUKAddress TestCase" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>UkTown</con:name><con:value>Clifton</con:value></con:property><con:property><con:name>UKCounty</con:name><con:value>Bedfordshire</con:value></con:property><con:property><con:name>UKPostCode</con:name><con:value>SG17</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

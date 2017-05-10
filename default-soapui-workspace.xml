@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="Projects" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="country">/Users/Mojgan/country-soapui-project.xml</con:project>
+  <con:project name="CurrencyConvertor">/Users/Mojgan/CurrencyConvertor-soapui-project.xml</con:project>
+  <con:recentItemCollection>
+    <con:moduleId>StarterPageModule</con:moduleId>
+    <con:itemId>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:itemId>
+    <con:itemId>c290f0a3-2b1e-4854-9c64-6b0699c25b49</con:itemId>
+    <con:itemId>ac227576-3ea6-4e9b-bd38-08300fa1a2ac</con:itemId>
+  </con:recentItemCollection>
+  <con:recentItemCollection>
+    <con:moduleId>ProjectsModule</con:moduleId>
+    <con:itemId>ab875c18-0dc1-437d-a23d-8e8578216934</con:itemId>
+    <con:itemId>c2855432-37d3-4fb4-a148-f40ac5f041dc</con:itemId>
+    <con:itemId>efe7a62e-042f-45ab-be7f-5ab6c94e1c3f</con:itemId>
+  </con:recentItemCollection>
+  <con:navigatorNodeCollection>
+    <con:rootNodeLabel>Projects</con:rootNodeLabel>
+    <con:expandNodeState>
+      <con:id>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>ab875c18-0dc1-437d-a23d-8e8578216934</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>c290f0a3-2b1e-4854-9c64-6b0699c25b49</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>c2855432-37d3-4fb4-a148-f40ac5f041dc</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>98d244c8-2f24-4176-9e88-b50f26f90054</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>3916c95d-b779-42bc-a372-9f9c20d8fcce</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>ac227576-3ea6-4e9b-bd38-08300fa1a2ac</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+  </con:navigatorNodeCollection>
+  <con:navigatorNodeCollection>
+    <con:rootNodeLabel>operations</con:rootNodeLabel>
+    <con:expandNodeState>
+      <con:id>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>c290f0a3-2b1e-4854-9c64-6b0699c25b49</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+  </con:navigatorNodeCollection>
+  <con:navigatorNodeCollection>
+    <con:rootNodeLabel>SoapUI NG</con:rootNodeLabel>
+    <con:expandNodeState>
+      <con:id>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>c290f0a3-2b1e-4854-9c64-6b0699c25b49</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>ac227576-3ea6-4e9b-bd38-08300fa1a2ac</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+  </con:navigatorNodeCollection>
+  <con:project name="cconvontor">/Users/Mojgan/cconvontor-soapui-project.xml</con:project>
+  <con:project name="airportSoap">/Users/Mojgan/SoapUI-Tutorials/airportSoap-soapui-project.xml</con:project>
+  <con:project name="Sample REST Project">/Users/Mojgan/SoapUI-Tutorials/Sample-REST-Project-soapui-project.xml</con:project>
+  <con:project name="Airport">/Users/Mojgan/Downloads/Airport-soapui-project.xml</con:project>
+  <con:project name="REST Project 1">/Users/Mojgan/REST-Project-1-soapui-project.xml</con:project>
+  <con:project name="Country_Assingment1">/Users/Mojgan/Country-Assingment1_Mojgan.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>
