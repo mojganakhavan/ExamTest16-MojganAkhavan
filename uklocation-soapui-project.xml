@@ -84,11 +84,6 @@ def UKPostCode = slurperResponse.Table.PostCode[count]
 
 
 log.info("UK :" +" " +UKPostCode)
-/*
-testRunner.testCase.testSuite.project.setPropertyValue("UKTown", UKTown.toString())
-testRunner.testCase.testSuite.project.setPropertyValue("UKCounty", UKCounty.toString())
-testRunner.testCase.testSuite.project.setPropertyValue("UKPostCode", UKPostCode.toString())
-*/
 
 com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("UKTown", UKTown.toString())
 com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("UKCounty", UKCounty.toString())
